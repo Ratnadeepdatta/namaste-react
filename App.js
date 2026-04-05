@@ -1,41 +1,26 @@
-// const heading = React.createElement("h1", 
-//     {id:"heading"},
-//      "Hello World From React");
 
 
-import React from "react";
-// import ReactDOM from "react-dom";
-import ReactDOM from "react-dom/client";
+    import React from "react";
+    import ReactDOM from "react-dom/client";
+// import { jsx } from "react/jsx-runtime";
 
-// const heading = React.createElement("div", { id: "parent" }, [
-//   React.createElement(
-//     "div",
-//     { id: "child", key: "child1" },  
-//     [
-//       React.createElement("h1", { key: "h1-1" }, "This is nested heading"),
-//       React.createElement("h2", { key: "h2-1" }, "This nested FOR Multipull Elements")
-//     ]
-//   ),
+// react.createelement = ReactElements-js objects = HTML Element (render)
+// jsx => Babel is transpaile it to      React.create => ReactElement-Js Object => HTMLElement(render)
 
-//   React.createElement(
-//     "div",
-//     { id: "child2", key: "child2" },
-//     [
-//       React.createElement("h1", { key: "h1-2" }, "This is h1 heading"),
-//       React.createElement("h2", { key: "h2-2" }, "This nested FOR Multipull Elements")
-//     ]
-//   )
-// ]);
-const heading = React.createElement("div", {id:"parent"},[
-     React.createElement("div", {id: "child", key: "child1"}, 
-    [ React.createElement("h1", {key: "h1-1"}, "This is nested heading"),
-        React.createElement("h2", {key: "h2-1"}, "This  nested FOR Multipull Elements")]),
+const Title = () => ( 
+    <h1>This is Namaste React Course</h1>
+);
 
-        React.createElement("div", {id: "child2", key: "child2"}, 
-    [ React.createElement("h1", {key: "h1-2"}, "This is h1 heading"),
-        React.createElement("h2", {key: "h2-2"}, "This  nested FOR Multipull Elements")])
-]);     
+    // React Functional component
+
+    const HeadingComponent = () => ( 
+        <div id="component"> 
+        <Title/>
+        <h1 className="heading"> Today i will complidet this epeshoud</h1>
+        </div>
+    );  
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<HeadingComponent/>);
