@@ -5,7 +5,7 @@
     "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
     "info": {
     "id": "368375",
-    "name": "Andhra Gunpowder",
+    "name": "Datta",
     "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2026/2/5/ec1b9dee-d3ee-498d-9835-83c09be98117_e0de6fc1-6b38-49e9-91ce-94910a19bb9f.jpg",
     "locality": "Byraveshwara Nagar",
     "areaName": "Vijayanagar",
@@ -111,7 +111,7 @@
     "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
     "info": {
     "id": "1013653",
-    "name": "Big Bowl",
+    "name": "Big ",
     "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/24/47a208ec-12d8-486a-856c-9bc5aa089a16_1013653.jpg",
     "locality": "Mysore Road",
     "areaName": "Global Mall",
