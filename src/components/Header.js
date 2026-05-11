@@ -1,5 +1,6 @@
     import { LOGO_URL } from "../Utils/contents";
     import { useState, useEffect} from "react";
+    import { Link } from "react-router-dom";
 
     const Header = ()=>{
 
@@ -16,16 +17,17 @@
 
                 return(
                     <div className="header">    
-                        <div className="logo-container">
+                      <Link to="/">  <div className="logo-container">
                             <img src={LOGO_URL}/>
                         </div>
+                        </Link>
                         <div className="nav-items">
                             <ul>
-                                <li>Home</li>
-                                <li>About Me</li>
-                                <li>Services</li>
-                                <li>Portfolio</li>
-                                <li>Contact Me</li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About Me</Link></li>
+                                <li><Link to="/">Services</Link></li>
+                                <li><Link to="/">Portfolio</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                                 <button className="btn-header"
                                  onClick={() => { 
                                    btnNameReact === "Login"
